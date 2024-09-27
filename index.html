@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Solana Token</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/@solana/web3.js/1.31.0/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@solana/spl-token@latest/dist/spl-token.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input { margin: 10px 0; padding: 10px; width: 100%; }
+        button { padding: 10px; background-color: #28a745; color: white; border: none; cursor: pointer; }
+        button:disabled { background-color: #ccc; }
+        h1 { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Create Your Token on Solana</h1>
+    <button id="connectWallet">Connect Wallet</button>
+    <div>
+        <input type="text" id="tokenName" placeholder="Token Name" />
+        <input type="text" id="tokenSymbol" placeholder="Token Symbol" />
+        <input type="number" id="totalSupply" placeholder="Total Supply" min="1" />
+    </div>
+    <button id="createToken" disabled>Create Token</button>
+</body>
+</html>
